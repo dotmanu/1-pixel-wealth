@@ -1,10 +1,10 @@
-var bezos = document.getElementById('bezos');
-var bezos_counter = document.getElementById('bezos-counter');
-var bezosCounterStart = document.getElementById('bezos-counter-start');
+var amancio = document.getElementById('amancio');
+var amancio_counter = document.getElementById('amancio-counter');
+var amancioCounterStart = document.getElementById('amancio-counter-start');
 
-var four_hundred = document.getElementById('four-hundred');
-var four_hundred_counter = document.getElementById('four-hundred-counter');
-var four_hundred_counter_start = document.getElementById('four-hundred-counter-start');
+var one_hundred = document.getElementById('one-hundred');
+var one_hundred_counter = document.getElementById('one-hundred-counter');
+var one_hundred_counter_start = document.getElementById('one-hundred-counter-start');
 
 var sixtyPercent = document.getElementById('sixty-percent');
 var sixtyPercentIndicator = document.getElementById('sixty-percent-indicator');
@@ -12,10 +12,10 @@ var sixtyPercentScrollPercentage = 0.0;
 var babies = document.getElementById('babies-wrapper');
 var baby_counter = document.getElementById('baby-counter');
 
-var thousand = new Intl.NumberFormat('en-US')
-var money = new Intl.NumberFormat('en-US', {
+var thousand = new Intl.NumberFormat('es-ES')
+var money = new Intl.NumberFormat('es-ES', {
   style: 'currency',
-  currency: 'USD',
+  currency: 'EUR',
   minimumFractionDigits: 0,
   maximumFractionDigits: 0,
 });
@@ -62,7 +62,7 @@ function generate_sixty_percent() {
 generate_sixty_percent();
 
 sixtyPercent.addEventListener('scroll', function(){
-  let newScroll = ((sixtyPercent.scrollTop / sixtyPercent.scrollHeight) * 60).toFixed(1);
+  let newScroll = ((sixtyPercent.scrollTop / sixtyPercent.scrollHeight) * 20.7).toFixed(1);
   if (sixtyPercentScrollPercentage !== newScroll) {
     sixtyPercentScrollPercentage = newScroll;
     sixtyPercentIndicator.innerHTML = newScroll + '%';
@@ -75,35 +75,35 @@ babies.addEventListener('scroll', function(){
 })
 
 function update_wealth_counter() {
-  if (bezos_viewable()) {
-    if (bezos_counter_viewable()) {
-      let wealth = (window.scrollX - bezos.offsetLeft + 175) * 500000;
-      bezos_counter.innerHTML = (wealth < 185000000000) ? money.format(wealth) : "$185,000,000,000";
+  if (amancio_viewable()) {
+    if (amancio_counter_viewable()) {
+      let wealth = (window.scrollX - amancio.offsetLeft + 175) * 200000;
+      amancio_counter.innerHTML = (wealth < 64747000000) ? money.format(wealth) : "64.747.000.000€";
     }
     else {
-      bezos_counter.innerHTML = '';
+      amancio_counter.innerHTML = '';
     }
   }
-  else if (four_hundred_viewable()) {
-    if (four_hundred_counter_viewable()) {
-      let wealth = (window.scrollX - four_hundred.offsetLeft + 175) * 500000;
-      four_hundred_counter.innerHTML = (wealth < 3200000000000) ? money.format(wealth) : "$3,200,000,000,000";
+  else if (one_hundred_viewable()) {
+    if (one_hundred_counter_viewable()) {
+      let wealth = (window.scrollX - one_hundred.offsetLeft + 175) * 200350;
+      one_hundred_counter.innerHTML = (wealth < 130505000000) ? money.format(wealth) : "130.505.000.000€";
     }
     else {
-      four_hundred_counter.innerHTML = '';
+      one_hundred_counter.innerHTML = '';
     }
   }
-  function bezos_viewable() {
-    return window.scrollX < bezos.offsetLeft + bezos.offsetWidth + 100;
+  function amancio_viewable() {
+    return window.scrollX < amancio.offsetLeft + amancio.offsetWidth + 100;
   }
-  function bezos_counter_viewable() {
-    return bezosCounterStart.offsetLeft - window.scrollX < (window.innerWidth);
+  function amancio_counter_viewable() {
+    return amancioCounterStart.offsetLeft - window.scrollX < (window.innerWidth);
   }
-  function four_hundred_viewable() {
-    return window.scrollX < four_hundred.offsetLeft + four_hundred.offsetWidth + 100;
+  function one_hundred_viewable() {
+    return window.scrollX < one_hundred.offsetLeft + one_hundred.offsetWidth + 100;
   }
-  function four_hundred_counter_viewable() {
-    return four_hundred_counter_start.offsetLeft - window.scrollX < (window.innerWidth);
+  function one_hundred_counter_viewable() {
+    return one_hundred_counter_start.offsetLeft - window.scrollX < (window.innerWidth);
   }
 }
 function toggleZoom() {

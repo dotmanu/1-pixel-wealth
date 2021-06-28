@@ -16,6 +16,7 @@ h1 {
   line-height: 0.9;
   width: 100%;
   margin-top: 100px;
+  font-family: 'Roboto', sans-serif;
 }
 .scroll-this-way {
   align-self: flex-end;
@@ -26,6 +27,7 @@ h1 {
   bottom: 0;
   padding-top: 42px;
   padding-left: 48px;
+  font-family: 'Roboto', sans-serif;
 
   font-size: 30px;
   color: #00000033;
@@ -40,6 +42,13 @@ h1 {
   animation-iteration-count: infinite;
   animation-direction: forward;
   animation-duration: 3s;
+}
+a{
+  color: #000;
+}
+p{
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
 }
 .footer {
   position: absolute;
@@ -135,15 +144,18 @@ h1 {
 }
 .title {
   margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
 }
 .billion .wealth > .wealth-title {
   flex-basis: 110px;
   position: static;
+  font-family: 'Roboto', sans-serif;
 }
-.four-hundred .wealth > .wealth-title {
+.one-hundred .wealth > .wealth-title {
   flex-basis: 420px;
 }
-.four-hundred .infobox.intro {
+.one-hundred .infobox.intro {
   margin-left: 0;
   position: relative;
   width: auto;
@@ -156,6 +168,7 @@ h1 {
 @media (max-width: 450px) {
   .wealth-title {
     font-size: 19px;
+    font-family: 'Roboto', sans-serif;
   }
 }
 .wealth-title {
@@ -165,6 +178,7 @@ h1 {
   margin-bottom: 5px;
   color: black;
   margin-top: 0;
+  font-family: 'Roboto', sans-serif;
 }
 .text-infobox .title,
 .infobox .chart {
@@ -187,7 +201,7 @@ h1 {
     width: 90vw;
   }
 }
-.infobox.year-veteran .title {
+.infobox.gastos-la-paz .title {
   position: sticky;
   left: 0;
 }
@@ -227,7 +241,7 @@ h1 {
   margin-left: 8000px;
   width: 15000px;
 }
-.four-hundred .infobox {
+.one-hundred .infobox {
   width: 4000px;
 }
 .flex {
@@ -254,6 +268,7 @@ h1 {
 }
 .sub-infobox {
   margin: 0 40px;
+  padding-top: 20px;
 }
 .sub-infobox .title {
   width: 430px;
@@ -266,18 +281,22 @@ h1 {
 }
 .column-infobox .sub-infobox {
   margin-bottom: 20px;
+  padding-top: 20px;
 }
 .one-thousand {
-  width: 1px;
-  height: 1px;
+  /* 2.5px */
+  width: 1.58px;
+  height: 1.58px;
   margin-top: 5px;
 }
 .median {
   width: 320px;
 }
 .median .wealth {
-  width: 7.94px;
-  height: 7.94px;
+  /* 64px */
+  width: 8px;
+  height: 8px;
+  background-image: url(img/back-small.jpg);
 }
 .explainer {
   font-size: 16px;
@@ -287,12 +306,12 @@ h1 {
   width: 150px;
 }
 .million .wealth {
-  width: 31.62px;
-  height: 31.62px;
-  background-color: #4CAF50;
+  width: 50px;
+  height: 50px;
+  background-image: url(img/back-millon.jpg);
 }
 .billion .wealth {
-  width: 2000px;
+  width: 5000px;
   height: 500px;
   background-color: #03A9F4;
 }
@@ -301,21 +320,41 @@ h1 {
     border-bottom: 3px dotted #007fb7;
   }
 }
-.bezos .wealth {
-  width: 370000px;
+
+/* 1m = 2.500px */
+/* 64.747m = 161.867.500px */
+/* 323.735px x 500px = 161.867.500px */
+
+.amancio .wealth {
+  width: 323735px; 
   height: 500px;
-  background-color: orange;
+  background: url('img/ruler.svg'), url('img/backk.jpg');
+  background-attachment:scroll, fixed;
+  background-size: auto, cover;
+  background-repeat: repeat-x, no-repeat;
+  background-position: 0 470px, 0 0px;
 }
-.four-hundred .wealth {
+
+/* 130.505m = 326.262.500px */
+/* 652.525px x 500px = 326.262.500px */
+
+.one-hundred .wealth {
   margin-left: 100px;
-  width: 6401200px;
+  width: 652525px;
   height: 500px;
-  background-color: #03A9F4;
+  background: url('img/ruler.svg'), url('img/back-100.jpg');
+  background-attachment:scroll, fixed;
+  background-size: auto, cover;
+  background-repeat: repeat-x, no-repeat;
+  background-position: 0 470px, 0 0px;
 }
-.ruler {
-  background-image: url('img/ruler.svg');
-  background-repeat: repeat-x;
-  background-position: 0 470px;
+.br{
+  font-size:20px;
+  font-weight: 600;
+}
+.measure{
+  font-weight: 800;
+  padding: 2px 4px 0px 4px;
 }
 .key {
   position: absolute;
@@ -330,14 +369,11 @@ h1 {
 .key > span {
   display: inline-block;
 }
-.bezos .key > span {
-  background-color: orange;
+.amancio .key > span {
+  background-color: #fff;
 }
-.four-hundred .key > span {
-  background-color: #03A9F4;
-}
-.shadow {
-  box-shadow: -3px 5px 10px;
+.one-hundred .key > span {
+  background-color: #fff;
 }
 .counter {
   align-self: flex-end;
@@ -347,79 +383,94 @@ h1 {
   color: black;
   padding: 5px;
   min-width: 140px;
+  font-family: 'Roboto', sans-serif;
 }
-.lifetime .square {
-  width: 41.23px;
-  height: 41.23px;
-  background-color: blue;
+.hogares-esp .square {
+  /* 287'75px */
+  width: 16.96px;
+  height: 16.96px;
+  background-color: #147ed8;
 }
-.healthcare .square {
-  width: 4.96px;
-  height: 4.96px;
-  background-color: blue;
+.alimentacion .square {
+  /* 10'715px */
+  width: 3.27px;
+  height: 3.27px;
+  background-color: #147ed8;
 }
-.amazon-year .square {
-  width: 5.4px;
-  height: 5.4px;
-  background-color: blue;
+.inditex .square {
+  /* 41'5px */
+  width: 6.44px;
+  height: 6.44px;
+  background-color: #147ed8;
 }
-.year-veteran .square {
-  height: 400px;
-  width: 1186px;
+.gastos-la-paz .square {
+  /* 1m€ = 2.500px */
+  /* 325m€ = 325 x 2500px (812.500px) */
+  height: 325px;
+  width: 2500px;
   margin-top: 5px;
-  background-color: #8BC34A;
+  background-color: #147ed8;
 }
-.year-veteran .title {
+.gastos-la-paz .title {
   width: auto;
   padding: 10px;
   max-width: 380px;
   left: 0;
 }
-.year-veteran .square {
+.gastos-la-paz .square {
   position: static;
 }
 @media (max-width: 450px) {
- .year-veteran .title {
+ .gastos-la-paz .title {
    max-width: 210px;
  }
- .year-veteran .square {
+ .gastos-la-paz .square {
    border-bottom: 4px dashed #75a23e;
  }
 }
-.year-chemo {
+.recortes-sanidad {
   width: auto;
 }
-.year-chemo .square {
+.recortes-sanidad .square {
+  /* 1m€ = 2.500px */
+  /* 7256m€ = 400 x 7256px (2.902.400px) */
   height: 400px;
-  width: 22500px;
+  width: 7256px;
   background-color: #03A9F4;
-  border: 5px dashed #0078af;
   box-sizing: border-box;
 }
-.year-chemo .square .title {
+.recortes-sanidad .square .title {
   padding: 10px;
   position: sticky;
   left: 1px;
   display: inline-block;
 }
-.year-chemo .key {
+.recortes-sanidad .key {
   top: 310px;
 }
-.year-chemo .key > span {
+.recortes-sanidad .key > span {
   background-color: #03A9F4;
 }
 .celebrities {
   display: flex;
   width: auto;
 }
-.beyonce .square {
-  height: 350px;
-  width: 1142px;
+.cocacolo .square {
+  /* 117.500px */
+  height: 320px;
+  width: 367.19px;
+  background-color: #86aad0;
+}
+.rafa-nadal .square {
+  /* 400.000px */
+  height: 320px;
+  width: 1250px;
   background-color: #406994;
 }
-.goldman .square {
-  width: 223px;
-  height: 223px;
+.thyssen .square {
+  /* 1.500.000px */
+  height: 320px;
+  width: 4687.5px;
   background-color: #64A8F0;
 }
 .tim-cook .square {
@@ -427,20 +478,23 @@ h1 {
   height: 350px;
   background-color: #71889e;
 }
-.doctor .square {
-  width: 81.8px;
-  height: 81.8px;
-  background-color: #0661b9;
+.ibex .square {
+  /* 11.750px */
+  width: 108.4px;
+  height: 108.4px;
+  background-color: #1e5b91;
 }
-.lawyer .square {
-  width: 63.2px;
-  height: 63.2px;
-  background-color: #00478a;
+.telefonica .square {
+  /* 12.975px */
+  width: 113.9px;
+  height: 113.9px;
+  background-color: #007fff;
 }
-.hedgefund .square {
-  width: 289.8px;
-  height: 289.8px;
-  background-color: #9daebf;
+.iberdrola .square {
+  /* 30.500px */
+  width: 174.6px;
+  height: 174.6px;
+  background-color: #6e9821;
 }
 .line-chart .chart-outer {
   width: 720px;
@@ -465,7 +519,7 @@ h1 {
 }
 @media (max-width: 450px) {
   .line-chart .chart-inner .zero,
-  .line-chart .chart-inner .two-hundred-million,
+  .line-chart .chart-inner .twenty-million,
   .line-chart .chart-inner .zuck-name {
     font-size: 28px;
   }
@@ -504,7 +558,6 @@ h1 {
 }
 .people {
   background-image: url('img/person.svg');
-  background-size: 20px;
 }
 .people.first {
   margin-top: -1040px;
@@ -514,6 +567,7 @@ h1 {
   font-weight: normal;
   text-align: center;
   margin: 5px;
+  font-family: 'Roboto', sans-serif;
 }
 .people-wrapper {
   width: 800px;
@@ -521,13 +575,18 @@ h1 {
   overflow-y: auto;
   overflow-x: hidden;
 }
-.four-hundred-people .people {
+.one-hundred-people .people {
   width: 800px;
   height: 400px;
 }
 .sixty-percent-people .people {
+  /* row = 115 people */
+  /* wrapper (800x400) = 2300 people */
+  /* 1686956/400 = 4217 x 2300 people = 9.7m */
   width: 800px;
-  height: 1974000px;
+  height: 1686956px;
+  background-image: url('img/person-top.png');
+  background-size: 7px;
 }
 .sixty-percent-people .people-wrapper {
   box-shadow: inset 0 0 10px #000000;
@@ -544,7 +603,20 @@ h1 {
 .people-label {
   position: absolute;
   top: 40%;
-  left: 39%;
+  left: 29%;
+}
+
+.people-label-bubble {
+  position: absolute;
+  top: 40%;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 4px 4px 5px;
+  font-size: 28px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  left: 17%;
 }
 .scroll-indicator {
   position: absolute;
@@ -581,7 +653,7 @@ h1 {
     width: 200px;
     height: 400px;
   }
-  .four-hundred-people .people {
+  .one-hundred-people .people {
       width: 200px;
       height: 400px;
   }
@@ -601,8 +673,15 @@ h1 {
   width: 590px;
   max-width: 96vw;
 }
-.plane-wrapper {
+.poverty-wrapper {
   width: 480px;
+  max-width: 96vw;
+}
+.poverty-wrapper img{
+  width: 90%;
+}
+.plane-wrapper {
+  width: 680px;
   max-width: 96vw;
 }
 .ninety-wrapper img,
@@ -627,79 +706,42 @@ h1 {
   border-radius: 50%;
 }
 .piechart .piechart-inner {
-  fill: yellowgreen;
-  stroke: #655;
+  fill: #073e72;
+  stroke: #89b8e5;
   stroke-width: 32;
 }
 @media (max-width: 450px) {
   .piechart.piechart h2 {
     font-size: 17px;
+    font-family: 'Roboto', sans-serif;
   }
 }
 .point-zero-three-percent .piechart-inner {
   stroke-dasharray: .03 100;
 }
-.two-point-seven-percent .piechart-inner {
-  stroke-dasharray: 2.7 100;
-}
-.three-percent .piechart-inner {
-  stroke-dasharray: 3 100;
-}
-.five-percent .piechart-inner {
-  stroke-dasharray: 5 100;
-}
-.five-point-three-percent .piechart-inner {
-  stroke-dasharray: 5.3 100;
-}
-.six-percent .piechart-inner {
-  stroke-dasharray: 6 100;
-}
-.seven-point-five-percent .piechart-inner {
-  stroke-dasharray: 7.5 100;
-}
-.six-percent .piechart-outer {
-  transform: rotate(-45deg);
-}
-.six-point-eight-percent .piechart-inner {
-  stroke-dasharray: 6.8 100;
-}
-.three-percent .piechart-outer,
-.two-point-five-percent .piechart-outer,
-.two-point-seven-percent .piechart-outer,
-.two-point-eight-percent .piechart-outer {
-  transform: rotate(-38deg);
-}
-.five-percent .piechart-outer,
-.four-percent .piechart-outer {
-  transform: rotate(-43deg);
-}
-.four-tenths-percent .piechart-outer {
-  transform: rotate(-34deg);
-}
-.seven-point-five-percent .piechart-outer,
-.six-point-three-percent .piechart-outer {
-  transform: rotate(-46deg);
-}
-.four-tenths-percent .piechart-inner {
-  stroke-dasharray: .4 100;
-}
-.two-point-five-percent .piechart-inner {
+.two-percent .piechart-inner {
   stroke-dasharray: 2.5 100;
 }
-.two-point-eight-percent .piechart-inner {
-  stroke-dasharray: 2.8 100;
+.five-percent .piechart-inner {
+  stroke-dasharray: 4.9 100;
 }
-.four-point-three-percent .piechart-inner {
-  stroke-dasharray: 4.3 100;
+.one-percent .piechart-inner {
+  stroke-dasharray: 1.4 100;
 }
-.six-point-three-percent .piechart-inner {
-  stroke-dasharray: 6.3 100;
+.one-percent .piechart-outer {
+  transform: rotate(-36deg);
 }
-.four-point-eight-percent .piechart-inner {
-  stroke-dasharray: 4.8 100;
+.two-percent .piechart-outer {
+  transform: rotate(-38deg);
 }
-.forty-percent .piechart-inner {
-  stroke-dasharray: 40 100;
+.five-percent .piechart-outer {
+  transform: rotate(-43deg);
+}
+.sixty-percent .piechart-inner {
+  stroke-dasharray: 63 100;
+}
+.sixty-percent .piechart-outer {
+  transform: rotate(-130deg);
 }
 .piechart .dotted-line {
   position: absolute;
@@ -715,9 +757,11 @@ h1 {
   left: 347px;
   top: -7px;
   font-size: 24px;
+  font-family: 'Roboto', sans-serif;
 }
 .piechart h2 {
   font-size: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 @media (max-width: 450px) {
   .piechart .label {
@@ -774,7 +818,7 @@ h1 {
 .malaria .babies {
   height: 8800320px;
   background-size: 160px;
-  background-image: url(img/baby.svg);
+  background-image: url(img/baby.png);
 }
 .malaria .babies-wrapper {
   box-shadow: inset 0 0 10px #00000042;
@@ -857,6 +901,7 @@ h1 {
 @media (max-width: 450px) {
   h3 {
     font-size: 14px;
+    font-family: 'Roboto', sans-serif;
   }
 }
 .cares .chart {

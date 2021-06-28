@@ -39,6 +39,7 @@ _[A note on the role of citations in this project](https://github.com/MKorostoff
 - [Efficacy of cash transfers](https://www.givedirectly.org/research-on-cash-transfers/)
 
 # About the Author
+
 One pixel wealth was created by [Matt Korostoff](https://mkorostoff.github.io/)
 
 # Against Malaria
