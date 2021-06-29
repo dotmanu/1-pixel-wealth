@@ -296,7 +296,7 @@ p{
   /* 64px */
   width: 8px;
   height: 8px;
-  background-image: url(img/back-small.jpg);
+  background: #57877d;
 }
 .explainer {
   font-size: 16px;
@@ -308,17 +308,12 @@ p{
 .million .wealth {
   width: 50px;
   height: 50px;
-  background-image: url(img/back-millon.jpg);
+  background: #57877d;
 }
 .billion .wealth {
   width: 5000px;
   height: 500px;
   background-color: #03A9F4;
-}
-@media (max-width: 450px) {
-  .billion .wealth {
-    border-bottom: 3px dotted #007fb7;
-  }
 }
 
 /* 1m = 2.500px */
@@ -328,7 +323,7 @@ p{
 .amancio .wealth {
   width: 323735px; 
   height: 500px;
-  background: url('img/ruler.svg'), url('img/backk.jpg');
+  background: url('img/ruler.svg'), #e1cfab;
   background-attachment:scroll, fixed;
   background-size: auto, cover;
   background-repeat: repeat-x, no-repeat;
@@ -342,7 +337,7 @@ p{
   margin-left: 100px;
   width: 652525px;
   height: 500px;
-  background: url('img/ruler.svg'), url('img/back-100.jpg');
+  background: url('img/ruler.svg'), #caba9b;
   background-attachment:scroll, fixed;
   background-size: auto, cover;
   background-repeat: repeat-x, no-repeat;
@@ -389,19 +384,19 @@ p{
   /* 287'75px */
   width: 16.96px;
   height: 16.96px;
-  background-color: #147ed8;
+  background-color: #6a9c91;
 }
 .alimentacion .square {
   /* 10'715px */
   width: 3.27px;
   height: 3.27px;
-  background-color: #147ed8;
+  background-color: #6a9c91;
 }
 .inditex .square {
   /* 41'5px */
   width: 6.44px;
   height: 6.44px;
-  background-color: #147ed8;
+  background-color: #6a9c91;
 }
 .gastos-la-paz .square {
   /* 1m€ = 2.500px */
@@ -409,7 +404,7 @@ p{
   height: 325px;
   width: 2500px;
   margin-top: 5px;
-  background-color: #147ed8;
+  background-color: #6a9c91;
 }
 .gastos-la-paz .title {
   width: auto;
@@ -436,7 +431,7 @@ p{
   /* 7256m€ = 400 x 7256px (2.902.400px) */
   height: 400px;
   width: 7256px;
-  background-color: #03A9F4;
+  background-color: #6a9c91;
   box-sizing: border-box;
 }
 .recortes-sanidad .square .title {
@@ -449,7 +444,7 @@ p{
   top: 310px;
 }
 .recortes-sanidad .key > span {
-  background-color: #03A9F4;
+  background-color: #6a9c91;
 }
 .celebrities {
   display: flex;
@@ -459,42 +454,37 @@ p{
   /* 117.500px */
   height: 320px;
   width: 367.19px;
-  background-color: #86aad0;
+  background-color: #84b9ad;
 }
 .rafa-nadal .square {
   /* 400.000px */
   height: 320px;
   width: 1250px;
-  background-color: #406994;
+  background-color: #6a9d92;
 }
 .thyssen .square {
   /* 1.500.000px */
   height: 320px;
   width: 4687.5px;
-  background-color: #64A8F0;
-}
-.tim-cook .square {
-  width: 1785px;
-  height: 350px;
-  background-color: #71889e;
+  background-color: #57877d;
 }
 .ibex .square {
   /* 11.750px */
   width: 108.4px;
   height: 108.4px;
-  background-color: #1e5b91;
+  background-color: #a8a49e;
 }
 .telefonica .square {
   /* 12.975px */
   width: 113.9px;
   height: 113.9px;
-  background-color: #007fff;
+  background-color: #8c867e;
 }
 .iberdrola .square {
   /* 30.500px */
   width: 174.6px;
   height: 174.6px;
-  background-color: #6e9821;
+  background-color: #57534e;
 }
 .line-chart .chart-outer {
   width: 720px;
@@ -706,8 +696,8 @@ p{
   border-radius: 50%;
 }
 .piechart .piechart-inner {
-  fill: #073e72;
-  stroke: #89b8e5;
+  fill: #3e7671;
+  stroke: #9fd3ce;
   stroke-width: 32;
 }
 @media (max-width: 450px) {
