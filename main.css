@@ -162,7 +162,6 @@ p{
   width: 10000px;
 }
 .wealth > .wealth-title {
-  flex-basis: 1%;
   padding: 10px;
 }
 @media (max-width: 450px) {
@@ -329,6 +328,7 @@ p{
   background-repeat: repeat-x, no-repeat;
   background-position: 0 470px, 0 0px;
 }
+
 
 /* 130.505m = 326.262.500px */
 /* 652.525px x 500px = 326.262.500px */
@@ -637,23 +637,31 @@ p{
 }
 @media (max-width: 450px) {
   .people {
-    background-size: 10px;
+    background-size: 20px;
   }
   .people-wrapper {
-    width: 200px;
-    height: 400px;
+    width: 400px;
+    height: 200px;
   }
   .one-hundred-people .people {
-      width: 200px;
-      height: 400px;
+      width: 400px;
+      height: 200px;
   }
   .sixty-percent-people .people {
-    width: 200px;
-    height: 1974000px;
+    width: 400px;
+  height: 3373912px;
+  background-image: url('img/person-top.png');
+  background-size: 7px;
   }
   .people-label {
-    left: 35px;
+    left: 75px;
     font-size: 20px;
+  }
+  .people-label-bubble {
+    position: absolute;
+    top: 30%;
+    padding: 10px;
+    left: 0%;
   }
   .people-wrapper .percent {
     margin-left: 66px;
