@@ -162,6 +162,7 @@ p{
   width: 10000px;
 }
 .wealth > .wealth-title {
+  flex-basis: 1%;
   padding: 10px;
 }
 @media (max-width: 450px) {
