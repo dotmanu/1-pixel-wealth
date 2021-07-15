@@ -323,7 +323,7 @@ p{
 .amancio .wealth {
   width: 323735px; 
   height: 500px;
-  background: url('img/ruler.svg'), #e1cfab;
+  background: url('img/ruler.svg'), #f6b041;
   background-attachment:scroll, fixed;
   background-size: auto, cover;
   background-repeat: repeat-x, no-repeat;
@@ -337,7 +337,7 @@ p{
   margin-left: 100px;
   width: 652525px;
   height: 500px;
-  background: url('img/ruler.svg'), #caba9b;
+  background: url('img/ruler.svg'), #4fb5e4;
   background-attachment:scroll, fixed;
   background-size: auto, cover;
   background-repeat: repeat-x, no-repeat;
@@ -696,7 +696,7 @@ p{
   border-radius: 50%;
 }
 .piechart .piechart-inner {
-  fill: #3e7671;
+  fill: #387964;
   stroke: #9fd3ce;
   stroke-width: 32;
 }
